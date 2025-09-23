@@ -33,7 +33,7 @@ createPlatform(1100, 500, 100, 5, "blue")
 createPlatform(1300, 400, 100, 5, "green", 100, 1300, 2)
 createPlatform(100, 300, 100, 5, "#9932CC")
 createPlatform(300, 200, 700, 5, "#ADD8E6")
-createPlatform(1200, 200, 100, 5)
+createPlatform(1200, 200, 100, 50)
     // TODO 2 - Create Platforms
     //createPlatform(xPos, yPos, Width, Height)
 
@@ -43,7 +43,7 @@ createPlatform(1200, 200, 100, 5)
 
 
     // TODO 4 - Create Cannons
-createCannon("right", 410, 1400, 70, 70)
+createCannon("right", 420, 1400, 60, 60)
 
 
     //////////////////////////////////
