@@ -28,11 +28,12 @@ $(function () {
 
     // TODO 1 - Enable the Grid
     // toggleGrid();
-createPlatform(200, 700, 100, 5, "red", 200, 500, 1)
 createPlatform(500, 600, 400, 5, "crimson")
 createPlatform(1100, 500, 100, 5, "blue")
 createPlatform(1300, 400, 100, 5, "green", 100, 1300, 2)
-
+createPlatform(100, 300, 100, 5, "#9932CC")
+createPlatform(300, 200, 700, 5, "#ADD8E6")
+createPlatform(1200, 200, 100, 5)
     // TODO 2 - Create Platforms
     //createPlatform(xPos, yPos, Width, Height)
 
@@ -42,7 +43,7 @@ createPlatform(1300, 400, 100, 5, "green", 100, 1300, 2)
 
 
     // TODO 4 - Create Cannons
-
+createCannon("right", 410, 1400, 70, 70)
 
 
     //////////////////////////////////
