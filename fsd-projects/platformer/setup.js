@@ -97,6 +97,6 @@ var collectableList = {
   grace: { image: "images/collectables/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  goofy: { image: "images/collectables/goffyimagemyfriendsentme.jpg" },
   determination: { image: "images/collectables/OIP (1).jpeg" }
 };

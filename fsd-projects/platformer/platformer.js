@@ -30,7 +30,7 @@ $(function () {
     // toggleGrid();
 createPlatform(500, 600, 400, 5, "crimson")
 createPlatform(1100, 500, 100, 5, "blue")
-createPlatform(1300, 400, 100, 5, "green", 100, 1300, 2)
+createPlatform(1300, 400, 100, 5, "green", 100, 1300, 4)
 createPlatform(100, 300, 100, 5, "#9932CC")
 createPlatform(300, 200, 700, 5, "#ADD8E6")
 createPlatform(1200, 200, 100, 50)
@@ -43,9 +43,10 @@ createCollectable("determination", 100, 100)
 createCollectable("determination", 1225, 100)
 createCollectable("determination", 1135, 460)
 createCollectable("determination", 500, 350)
+createCollectable("goofy", 1300, 700)
 // TODO 4 - Create Cannons
-createCannon("right", 420, 1400, 60, 60)
-createCannon("bottom", 900, 2000, 60, 60)
+createCannon("right", 420, 30000, 700, 700)
+createCannon("bottom", 900, 1000, 60, 60)
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
