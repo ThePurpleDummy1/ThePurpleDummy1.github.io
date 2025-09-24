@@ -39,12 +39,13 @@ createPlatform(1200, 200, 100, 50)
 
 
     // TODO 3 - Create Collectables
-
-
-
-    // TODO 4 - Create Cannons
+createCollectable("determination", 100, 100)
+createCollectable("determination", 1225, 100)
+createCollectable("determination", 1135, 460)
+createCollectable("determination", 500, 350)
+// TODO 4 - Create Cannons
 createCannon("right", 420, 1400, 60, 60)
-
+createCannon("bottom", 900, 2000, 60, 60)
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
