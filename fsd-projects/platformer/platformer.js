@@ -39,11 +39,11 @@ createPlatform(1200, 200, 100, 50)
 
 
     // TODO 3 - Create Collectables
-createCollectable("determination", 100, 100)
+createCollectable("bravery", 100, 100)
 createCollectable("determination", 1225, 100)
-createCollectable("determination", 1135, 460)
-createCollectable("determination", 500, 350)
-createCollectable("goofy", 1300, 700)
+createCollectable("patience", 1135, 460)
+createCollectable("justice", 500, 350)
+createCollectable("preserverance", 1300, 700)
 // TODO 4 - Create Cannons
 createCannon("right", 420, 30000, 700, 700)
 createCannon("bottom", 900, 1000, 60, 60)
