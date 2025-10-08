@@ -105,3 +105,14 @@ bgm4.pause();
 }
 };
 
+var bgm5 = new Audio("cornered.ogg"); // replace with the actual path to your mp3
+bgm5.loop = true; // keeps playing in a loop
+bgm5.volume = 0.2; // optional: volume between 0.0 and 1.0
+
+window.playAudio5 = function () {
+if (bgm5.paused) {
+bgm5.play();
+} else {
+bgm5.pause();
+}
+};
