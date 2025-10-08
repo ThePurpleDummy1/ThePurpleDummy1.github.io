@@ -44,7 +44,7 @@ $(function () {
     createCollectable("justice", 500, 350);
     createCollectable("preserverance", 1300, 700);
     createCollectable("goofy", 200, 700);
-    createCollectable("kindness", 700, 350)
+    createCollectable("kindness", 700, 350);
     // TODO 4 - Create Cannons
     createCannon("right", 420, 10000000000000, 700, 700);
     createCannon("bottom", 900, 1000, 60, 60);
@@ -62,11 +62,11 @@ bgm1.loop = true; // keeps playing in a loop
 bgm1.volume = 0.2; // optional: volume between 0.0 and 1.0
 
 window.playAudio1 = function () {
-if (bgm1.paused) {
-bgm1.play();
-} else {
-bgm1.pause();
-}
+  if (bgm1.paused) {
+    bgm1.play();
+  } else {
+    bgm1.pause();
+  }
 };
 
 var bgm2 = new Audio("Av.ogg"); // replace with the actual path to your mp3
@@ -74,11 +74,11 @@ bgm2.loop = true; // keeps playing in a loop
 bgm2.volume = 0.2; // optional: volume between 0.0 and 1.0
 
 window.playAudio2 = function () {
-if (bgm2.paused) {
-bgm2.play();
-} else {
-bgm2.pause();
-}
+  if (bgm2.paused) {
+    bgm2.play();
+  } else {
+    bgm2.pause();
+  }
 };
 
 var bgm3 = new Audio("heatwave.ogg"); // replace with the actual path to your mp3
@@ -86,11 +86,11 @@ bgm3.loop = true; // keeps playing in a loop
 bgm3.volume = 0.2; // optional: volume between 0.0 and 1.0
 
 window.playAudio3 = function () {
-if (bgm3.paused) {
-bgm3.play();
-} else {
-bgm3.pause();
-}
+  if (bgm3.paused) {
+    bgm3.play();
+  } else {
+    bgm3.pause();
+  }
 };
 
 var bgm4 = new Audio("preserverance.ogg"); // replace with the actual path to your mp3
@@ -98,11 +98,11 @@ bgm4.loop = true; // keeps playing in a loop
 bgm4.volume = 0.2; // optional: volume between 0.0 and 1.0
 
 window.playAudio4 = function () {
-if (bgm4.paused) {
-bgm4.play();
-} else {
-bgm4.pause();
-}
+  if (bgm4.paused) {
+    bgm4.play();
+  } else {
+    bgm4.pause();
+  }
 };
 
 var bgm5 = new Audio("cornered.ogg"); // replace with the actual path to your mp3
@@ -110,9 +110,9 @@ bgm5.loop = true; // keeps playing in a loop
 bgm5.volume = 0.2; // optional: volume between 0.0 and 1.0
 
 window.playAudio5 = function () {
-if (bgm5.paused) {
-bgm5.play();
-} else {
-bgm5.pause();
-}
+  if (bgm5.paused) {
+    bgm5.play();
+  } else {
+    bgm5.pause();
+  }
 };
