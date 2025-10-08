@@ -38,19 +38,26 @@
 function playBothSongs() {
     const audio1 = document.getElementById("song2");
     const audio2 = document.getElementById("song3");
-    audio1.volume = 0.2
+    audio1.volume = 0.2 //needed to turn up or down the volume
     audio2.volume = 0.2
     audio1.currentTime = 0; // start from beginning
     audio2.currentTime = 0;
-
-    audio1.play();
+    if (audio1.paused){
+    audio1.play(); //wont play without this
+    } else {
+    audio1.pause()
+  }
+    if (audio2.paused) {
     audio2.play();
+  } else{
+    audio2.pause()
+  }
 }
 </script>
 <button onclick="playAllSongs()">Cornered2</button>
 
 <script>
-  // Create three audio objects
+  // Create three or more audio objects
   const song1 = new Audio('cornered.ogg');
   const song2 = new Audio('corneredbfside.ogg');
   const song3 = new Audio('corneredundyneside.ogg');
