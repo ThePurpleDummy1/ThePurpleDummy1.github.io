@@ -92,11 +92,11 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
+  kindness: { image: "images/collectables/kindness.jpeg" },
   bravery: { image: "images/collectables/bravery.jpeg" },
   preserverance: { image: "images/collectables/deez nuts.jpeg" },
   patience: { image: "images/collectables/OIP (4).jpeg" },
   justice: { image: "images/collectables/OIP (3).jpeg" },
-  goofy: { image: "images/collectables/goffyimagemyfriendsentme.jpg" },
-  determination: { image: "images/collectables/OIP (1).jpeg" }
+  goofy: { image: "images/collectables/blue.jpeg" },
+  determination: { image: "images/collectables/OIP (1).jpeg" },
 };

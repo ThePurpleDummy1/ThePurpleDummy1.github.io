@@ -28,25 +28,26 @@ $(function () {
 
     // TODO 1 - Enable the Grid
     // toggleGrid();
-createPlatform(500, 600, 400, 5, "crimson")
-createPlatform(1100, 500, 100, 5, "blue")
-createPlatform(1300, 400, 100, 5, "green", 100, 1300, 4)
-createPlatform(100, 300, 100, 5, "#9932CC")
-createPlatform(300, 200, 700, 5, "#ADD8E6")
-createPlatform(1200, 200, 100, 50)
+    createPlatform(500, 600, 400, 5, "crimson");
+    createPlatform(1100, 500, 100, 5, "blue");
+    createPlatform(1300, 400, 100, 5, "green", 100, 1300, 4);
+    createPlatform(100, 300, 100, 5, "#9932CC");
+    createPlatform(300, 200, 700, 5, "#ADD8E6");
+    createPlatform(1200, 200, 100, 50);
     // TODO 2 - Create Platforms
     //createPlatform(xPos, yPos, Width, Height)
 
-
     // TODO 3 - Create Collectables
-createCollectable("bravery", 100, 100)
-createCollectable("determination", 1225, 100)
-createCollectable("patience", 1135, 460)
-createCollectable("justice", 500, 350)
-createCollectable("preserverance", 1300, 700)
-// TODO 4 - Create Cannons
-createCannon("right", 420, 30000, 700, 700)
-createCannon("bottom", 900, 1000, 60, 60)
+    createCollectable("bravery", 100, 100);
+    createCollectable("determination", 1225, 100);
+    createCollectable("patience", 1135, 460);
+    createCollectable("justice", 500, 350);
+    createCollectable("preserverance", 1300, 700);
+    createCollectable("goofy", 200, 700);
+    createCollectable("kindness", 700, 350)
+    // TODO 4 - Create Cannons
+    createCannon("right", 420, 10000000000000, 700, 700);
+    createCannon("bottom", 900, 1000, 60, 60);
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
@@ -55,3 +56,15 @@ createCannon("bottom", 900, 1000, 60, 60)
 
   registerSetup(setup);
 });
+
+var bgm = new Audio("Inst.ogg"); // replace with the actual path to your mp3
+bgm.loop = true; // keeps playing in a loop
+bgm.volume = 0.5; // optional: volume between 0.0 and 1.0
+
+window.playAudio = function () {
+if (bgm.paused) {
+bgm.play();
+} else {
+bgm.pause();
+}
+};
