@@ -19,12 +19,12 @@
 
     <br />
 
-    <button onclick="playAudio1()">Broken-Reality</button>
+    <button onclick="playBothSongs2()">Broken-Reality-with-lyrics</button>
+    <button onclick="playAudio1()">Broken-reality</button>
     <button onclick="playAudio3()">heatwave</button>
     <button onclick="playAudio4()">preserverance</button>
     <button onclick="playAllSongs()">Cornered</button>
     <button onclick="playBothSongs()">Avulsion</button>
-    <button onclick="playBothSongs2()">You-Are</button>
 
     <audio id="song1" src="cornered.ogg"></audio>
     <audio id="song2" src="Av.ogg"></audio>
@@ -92,8 +92,8 @@
     <script>
       function playBothSongs2() {
         //lets you do 2 songs at once
-        const audio1 = document.getElementById("song8");
-        const audio2 = document.getElementById("song9");
+        const audio1 = document.getElementById("song6");
+        const audio2 = document.getElementById("song7");
         audio1.volume = 0.1; //needed to turn up or down the volume
         audio2.volume = 0.1;
         audio1.loop = true;
@@ -112,5 +112,8 @@
         }
       }
     </script>
+
+
+
   </body>
 </html>
