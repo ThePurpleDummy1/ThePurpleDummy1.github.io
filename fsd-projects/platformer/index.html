@@ -24,6 +24,7 @@
     <button onclick="playAudio4()">preserverance</button>
     <button onclick="playAllSongs()">Cornered</button>
     <button onclick="playBothSongs()">Avulsion</button>
+    <button onclick="playBothSongs2()">You-Are</button>
 
     <audio id="song1" src="cornered.ogg"></audio>
     <audio id="song2" src="Av.ogg"></audio>
@@ -32,6 +33,8 @@
     <audio id="song5" src="corneredundyneside.ogg"></audio>
     <audio id="song6" src="final_fight.ogg"></audio>
     <audio id="song7" src="BrokenReality.ogg"></audio>
+    <audio id="song8" src="you-are.ogg"></audio>
+    <audio id="song9" src="you-are-voices.ogg"></audio>
 
     <script>
       function playBothSongs() {
@@ -40,9 +43,9 @@
         const audio2 = document.getElementById("song3");
         audio1.volume = 0.1; //needed to turn up or down the volume
         audio2.volume = 0.1;
-        audio1.loop = true; //lets it loop the song
+        audio1.loop = true;
         audio2.loop = true;
-        audio1.currentTime = 0; // start from beginning
+        audio1.currentTime = 0; 
         audio2.currentTime = 0;
         if (audio1.paused) {
           audio1.play();
@@ -50,7 +53,7 @@
           audio1.pause();
         }
         if (audio2.paused) {
-          audio2.play(); //i have the code wrong somewhere but you can pause and play (for me it restarts)
+          audio2.play(); 
         } else {
           audio2.pause();
         }
@@ -84,6 +87,29 @@
 
         song3.pause();
         song3.currentTime = 0;
+      }
+    </script>
+    <script>
+      function playBothSongs2() {
+        //lets you do 2 songs at once
+        const audio1 = document.getElementById("song8");
+        const audio2 = document.getElementById("song9");
+        audio1.volume = 0.1; //needed to turn up or down the volume
+        audio2.volume = 0.1;
+        audio1.loop = true;
+        audio2.loop = true;
+        audio1.currentTime = 0; 
+        audio2.currentTime = 0;
+        if (audio1.paused) {
+          audio1.play();
+        } else {
+          audio1.pause();
+        }
+        if (audio2.paused) {
+          audio2.play(); 
+        } else {
+          audio2.pause();
+        }
       }
     </script>
   </body>
