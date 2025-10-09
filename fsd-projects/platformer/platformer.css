@@ -3,7 +3,7 @@ body {
 }
 
 canvas {
-  background-color: #bd00f0
+  background-color: rgb(153, 82, 247);
   margin: 20px;
 }
 
