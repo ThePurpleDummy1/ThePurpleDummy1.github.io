@@ -20,12 +20,10 @@
 <br>
 
 <button onclick="playAudio1()">Broken-Reality</button>
-<button onclick="playAudio2()">avulsion</button>
 <button onclick="playAudio3()">heatwave</button>
 <button onclick="playAudio4()">preserverance</button>
-<button onclick="playAudio5()">cornered</button>
-
-<button onclick="playBothSongs()">Avulsion2</button>
+<button onclick="playAllSongs()">Cornered</button>
+<button onclick="playBothSongs()">Avulsion</button>
 
 
 <audio id="song1" src="cornered.ogg"></audio>
@@ -33,9 +31,11 @@
 <audio id="song3" src="Voices.ogg"></audio>
 <audio id="song4" src="corneredbfside.ogg"></audio>
 <audio id="song5" src="corneredundyneside.ogg"></audio>
+<audio id="song6" src="final_fight.ogg"></audio>
+<audio id="song7" src="BrokenReality.ogg"></audio>
 
 <script>
-function playBothSongs() {
+function playBothSongs() { //lets you do 2 songs at once
     const audio1 = document.getElementById("song2");
     const audio2 = document.getElementById("song3");
     audio1.volume = 0.2 //needed to turn up or down the volume
@@ -48,13 +48,13 @@ function playBothSongs() {
     audio1.pause()
   }
     if (audio2.paused) {
-    audio2.play();
+    audio2.play(); //i have the code wrong somewhere but you can pause and play (for me it restarts)
   } else{
     audio2.pause()
   }
 }
 </script>
-<button onclick="playAllSongs()">Cornered2</button>
+
 
 <script>
   // Create three or more audio objects
@@ -66,9 +66,9 @@ function playBothSongs() {
     song1.play();
     song2.play();
     song3.play();
-    song1.volume = 0.2
-    song2.volume = 0.2
-    song3.volume = 0.2
+    song1.volume = 0.1
+    song2.volume = 0.1
+    song3.volume = 0.1
   }
 
   function stopAllSongs() {
@@ -84,5 +84,7 @@ function playBothSongs() {
 </script>
 
 
+
   </body>
 </html>
+

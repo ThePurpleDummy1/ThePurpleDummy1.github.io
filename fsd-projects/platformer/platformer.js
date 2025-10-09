@@ -57,7 +57,7 @@ $(function () {
   registerSetup(setup);
 });
 
-var bgm1 = new Audio("Inst.ogg"); // replace with the actual path to your mp3
+var bgm1 = new Audio("BrokenReality.ogg"); // replace with the actual path to your mp3
 bgm1.loop = true; // keeps playing in a loop
 bgm1.volume = 0.2; // optional: volume between 0.0 and 1.0
 
@@ -69,7 +69,7 @@ window.playAudio1 = function () {
   }
 };
 
-var bgm2 = new Audio("Av.ogg"); // replace with the actual path to your mp3
+var bgm2 = new Audio("Av.ogg"); // replace with the actual path to your .mp3 or .ogg
 bgm2.loop = true; // keeps playing in a loop
 bgm2.volume = 0.2; // optional: volume between 0.0 and 1.0
 
