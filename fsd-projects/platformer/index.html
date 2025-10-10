@@ -17,74 +17,74 @@
     <img id="projectile" src="images/OIP (2).jpeg" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg" />
 
-<br>
+    <br />
 
-<button onclick="playAudio1()">Broken-Reality</button>
-<button onclick="playAudio3()">heatwave</button>
-<button onclick="playAudio4()">preserverance</button>
-<button onclick="playAllSongs()">Cornered</button>
-<button onclick="playBothSongs()">Avulsion</button>
+    <button onclick="playAudio1()">Broken-Reality</button>
+    <button onclick="playAudio3()">heatwave</button>
+    <button onclick="playAudio4()">preserverance</button>
+    <button onclick="playAllSongs()">Cornered</button>
+    <button onclick="playBothSongs()">Avulsion</button>
 
+    <audio id="song1" src="cornered.ogg"></audio>
+    <audio id="song2" src="Av.ogg"></audio>
+    <audio id="song3" src="Voices.ogg"></audio>
+    <audio id="song4" src="corneredbfside.ogg"></audio>
+    <audio id="song5" src="corneredundyneside.ogg"></audio>
+    <audio id="song6" src="final_fight.ogg"></audio>
+    <audio id="song7" src="BrokenReality.ogg"></audio>
 
-<audio id="song1" src="cornered.ogg"></audio>
-<audio id="song2" src="Av.ogg"></audio>
-<audio id="song3" src="Voices.ogg"></audio>
-<audio id="song4" src="corneredbfside.ogg"></audio>
-<audio id="song5" src="corneredundyneside.ogg"></audio>
-<audio id="song6" src="final_fight.ogg"></audio>
-<audio id="song7" src="BrokenReality.ogg"></audio>
+    <script>
+      function playBothSongs() {
+        //lets you do 2 songs at once
+        const audio1 = document.getElementById("song2");
+        const audio2 = document.getElementById("song3");
+        audio1.volume = 0.1; //needed to turn up or down the volume
+        audio2.volume = 0.1;
+        audio1.loop = true; //lets it loop the song
+        audio2.loop = true;
+        audio1.currentTime = 0; // start from beginning
+        audio2.currentTime = 0;
+        if (audio1.paused) {
+          audio1.play();
+        } else {
+          audio1.pause();
+        }
+        if (audio2.paused) {
+          audio2.play(); //i have the code wrong somewhere but you can pause and play (for me it restarts)
+        } else {
+          audio2.pause();
+        }
+      }
+    </script>
 
-<script>
-function playBothSongs() { //lets you do 2 songs at once
-    const audio1 = document.getElementById("song2");
-    const audio2 = document.getElementById("song3");
-    audio1.volume = 0.2 //needed to turn up or down the volume
-    audio2.volume = 0.2
-    audio1.currentTime = 0; // start from beginning
-    audio2.currentTime = 0;
-    if (audio1.paused){
-    audio1.play(); //wont play without this
-    } else {
-    audio1.pause()
-  }
-    if (audio2.paused) {
-    audio2.play(); //i have the code wrong somewhere but you can pause and play (for me it restarts)
-  } else{
-    audio2.pause()
-  }
-}
-</script>
+    <script>
+      // Create three or more audio objects
+      const song1 = new Audio("cornered.ogg");
+      const song2 = new Audio("corneredbfside.ogg");
+      const song3 = new Audio("corneredundyneside.ogg");
+      song1.loop = true;
+      song2.loop = true;
+      song3.loop = true;
 
+      function playAllSongs() {
+        song1.play();
+        song2.play();
+        song3.play();
+        song1.volume = 0.1;
+        song2.volume = 0.1;
+        song3.volume = 0.1;
+      }
 
-<script>
-  // Create three or more audio objects
-  const song1 = new Audio('cornered.ogg');
-  const song2 = new Audio('corneredbfside.ogg');
-  const song3 = new Audio('corneredundyneside.ogg');
+      function stopAllSongs() {
+        song1.pause();
+        song1.currentTime = 0;
 
-  function playAllSongs() {
-    song1.play();
-    song2.play();
-    song3.play();
-    song1.volume = 0.1
-    song2.volume = 0.1
-    song3.volume = 0.1
-  }
+        song2.pause();
+        song2.currentTime = 0;
 
-  function stopAllSongs() {
-    song1.pause();
-    song1.currentTime = 0;
-
-    song2.pause();
-    song2.currentTime = 0;
-
-    song3.pause();
-    song3.currentTime = 0;
-  }
-</script>
-
-
-
+        song3.pause();
+        song3.currentTime = 0;
+      }
+    </script>
   </body>
 </html>
-

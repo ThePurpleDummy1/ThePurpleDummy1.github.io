@@ -30,7 +30,7 @@ $(function () {
     // toggleGrid();
     createPlatform(500, 600, 400, 5, "crimson");
     createPlatform(1100, 500, 100, 5, "blue");
-    createPlatform(1300, 400, 100, 5, "green", 100, 1300, 4);
+    createPlatform(1300, 400, 100, 5, "green", 100, 1300, 2);
     createPlatform(100, 300, 100, 5, "#9932CC");
     createPlatform(300, 200, 700, 5, "#ADD8E6");
     createPlatform(1200, 200, 100, 50);
