@@ -69,18 +69,6 @@ window.playAudio1 = function () {
   }
 };
 
-var bgm2 = new Audio("Av.ogg"); // replace with the actual path to your .mp3 or .ogg
-bgm2.loop = true; // keeps playing in a loop
-bgm2.volume = 0.2; // optional: volume between 0.0 and 1.0
-
-window.playAudio2 = function () {
-  if (bgm2.paused) {
-    bgm2.play();
-  } else {
-    bgm2.pause();
-  }
-};
-
 var bgm3 = new Audio("heatwave.ogg"); // replace with the actual path to your mp3
 bgm3.loop = true; // keeps playing in a loop
 bgm3.volume = 0.2; // optional: volume between 0.0 and 1.0
@@ -102,17 +90,5 @@ window.playAudio4 = function () {
     bgm4.play();
   } else {
     bgm4.pause();
-  }
-};
-
-var bgm5 = new Audio("cornered.ogg"); // replace with the actual path to your mp3
-bgm5.loop = true; // keeps playing in a loop
-bgm5.volume = 0.2; // optional: volume between 0.0 and 1.0
-
-window.playAudio5 = function () {
-  if (bgm5.paused) {
-    bgm5.play();
-  } else {
-    bgm5.pause();
   }
 };
