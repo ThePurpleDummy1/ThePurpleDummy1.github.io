@@ -92,8 +92,7 @@ window.playAudio4 = function () {
     bgm4.pause();
   }
 };
-<<<<<<< HEAD
-=======
+
 
 var bgm5 = new Audio("cornered.ogg");
 bgm5.loop = true;
@@ -106,4 +105,4 @@ window.playAudio5 = function () {
     bgm5.pause();
   }
 };
->>>>>>> e7eb3d9303f7cf0c624c730df60011f4b96d6ce2
+
