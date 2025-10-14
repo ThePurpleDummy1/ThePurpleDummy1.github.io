@@ -19,7 +19,12 @@
 
     <br />
 
+<<<<<<< HEAD
     <button onclick="playAudio1()">Broken-Reality</button>
+=======
+    <button onclick="playBothSongs2()">Broken-Reality-with-lyrics</button>
+    <button onclick="playAudio1()">Broken-reality</button>
+>>>>>>> e7eb3d9303f7cf0c624c730df60011f4b96d6ce2
     <button onclick="playAudio3()">heatwave</button>
     <button onclick="playAudio4()">preserverance</button>
     <button onclick="playAllSongs()">Cornered</button>
@@ -30,6 +35,13 @@
     <audio id="song3" src="Voices.ogg"></audio>
     <audio id="song4" src="corneredbfside.ogg"></audio>
     <audio id="song5" src="corneredundyneside.ogg"></audio>
+<<<<<<< HEAD
+=======
+    <audio id="song6" src="final_fight.ogg"></audio>
+    <audio id="song7" src="BrokenReality.ogg"></audio>
+    <audio id="song8" src="you-are.ogg"></audio>
+    <audio id="song9" src="you-are-voices.ogg"></audio>
+>>>>>>> e7eb3d9303f7cf0c624c730df60011f4b96d6ce2
 
     <script>
       function playBothSongs() {
@@ -38,9 +50,15 @@
         const audio2 = document.getElementById("song3");
         audio1.volume = 0.1; //needed to turn up or down the volume
         audio2.volume = 0.1;
+<<<<<<< HEAD
         audio1.loop = true; //lets it loop the song
         audio2.loop = true;
         audio1.currentTime = 0; // start from beginning
+=======
+        audio1.loop = true;
+        audio2.loop = true;
+        audio1.currentTime = 0; 
+>>>>>>> e7eb3d9303f7cf0c624c730df60011f4b96d6ce2
         audio2.currentTime = 0;
         if (audio1.paused) {
           audio1.play();
@@ -48,7 +66,11 @@
           audio1.pause();
         }
         if (audio2.paused) {
+<<<<<<< HEAD
           audio2.play(); //i have the code wrong somewhere but you can pause and play (for me it restarts)
+=======
+          audio2.play(); 
+>>>>>>> e7eb3d9303f7cf0c624c730df60011f4b96d6ce2
         } else {
           audio2.pause();
         }
@@ -76,6 +98,41 @@
       function stopAllSongs() {
         song1.pause();
         song1.currentTime = 0;
+<<<<<<< HEAD
+=======
+
+        song2.pause();
+        song2.currentTime = 0;
+
+        song3.pause();
+        song3.currentTime = 0;
+      }
+    </script>
+    <script>
+      function playBothSongs2() {
+        //lets you do 2 songs at once
+        const audio1 = document.getElementById("song6");
+        const audio2 = document.getElementById("song7");
+        audio1.volume = 0.1; //needed to turn up or down the volume
+        audio2.volume = 0.1;
+        audio1.loop = true;
+        audio2.loop = true;
+        audio1.currentTime = 0; 
+        audio2.currentTime = 0;
+        if (audio1.paused) {
+          audio1.play();
+        } else {
+          audio1.pause();
+        }
+        if (audio2.paused) {
+          audio2.play(); 
+        } else {
+          audio2.pause();
+        }
+      }
+    </script>
+
+>>>>>>> e7eb3d9303f7cf0c624c730df60011f4b96d6ce2
 
         song2.pause();
         song2.currentTime = 0;
