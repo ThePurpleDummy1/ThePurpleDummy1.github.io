@@ -69,9 +69,9 @@ window.playAudio1 = function () {
   }
 };
 
-var bgm3 = new Audio("heatwave.ogg"); // replace with the actual path to your mp3
-bgm3.loop = true; // keeps playing in a loop
-bgm3.volume = 0.2; // optional: volume between 0.0 and 1.0
+var bgm3 = new Audio("heatwave.ogg"); 
+bgm3.loop = true; 
+bgm3.volume = 0.2; 
 
 window.playAudio3 = function () {
   if (bgm3.paused) {
@@ -81,9 +81,9 @@ window.playAudio3 = function () {
   }
 };
 
-var bgm4 = new Audio("preserverance.ogg"); // replace with the actual path to your mp3
-bgm4.loop = true; // keeps playing in a loop
-bgm4.volume = 0.2; // optional: volume between 0.0 and 1.0
+var bgm4 = new Audio("preserverance.ogg"); 
+bgm4.loop = true; 
+bgm4.volume = 0.2; 
 
 window.playAudio4 = function () {
   if (bgm4.paused) {
