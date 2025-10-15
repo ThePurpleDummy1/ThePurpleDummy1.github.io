@@ -94,15 +94,3 @@ window.playAudio4 = function () {
 };
 
 
-var bgm5 = new Audio("cornered.ogg");
-bgm5.loop = true;
-bgm5.volume = 0.2;
-
-window.playAudio5 = function () {
-  if (bgm5.paused) {
-    bgm5.play();
-  } else {
-    bgm5.pause();
-  }
-};
-
