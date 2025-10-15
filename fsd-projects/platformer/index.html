@@ -31,8 +31,6 @@
     <audio id="song4" src="corneredbfside.ogg"></audio>
     <audio id="song5" src="corneredundyneside.ogg"></audio>
 
-
-
     <script>
       function playBothSongs() {
         //lets you do 2 songs at once
@@ -47,7 +45,7 @@
 
         audio1.loop = true;
         audio2.loop = true;
-        audio1.currentTime = 0; 
+        audio1.currentTime = 0;
 
         audio2.currentTime = 0;
         if (audio1.paused) {
@@ -56,11 +54,9 @@
           audio1.pause();
         }
         if (audio2.paused) {
-
           audio2.play(); //i have the code wrong somewhere but you can pause and play (for me it restarts)
 
-          audio2.play(); 
-
+          audio2.play();
         } else {
           audio2.pause();
         }
@@ -89,35 +85,11 @@
         song1.pause();
         song1.currentTime = 0;
 
-
         song2.pause();
         song2.currentTime = 0;
 
         song3.pause();
         song3.currentTime = 0;
-      }
-    </script>
-    <script>
-      function playBothSongs2() {
-        //lets you do 2 songs at once
-        const audio1 = document.getElementById("song6");
-        const audio2 = document.getElementById("song7");
-        audio1.volume = 0.1; //needed to turn up or down the volume
-        audio2.volume = 0.1;
-        audio1.loop = true;
-        audio2.loop = true;
-        audio1.currentTime = 0; 
-        audio2.currentTime = 0;
-        if (audio1.paused) {
-          audio1.play();
-        } else {
-          audio1.pause();
-        }
-        if (audio2.paused) {
-          audio2.play(); 
-        } else {
-          audio2.pause();
-        }
       }
     </script>
   </body>
