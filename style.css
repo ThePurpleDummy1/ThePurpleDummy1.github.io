@@ -87,8 +87,8 @@ h2 {
   object-fit: cover;
   display: block;
   border-radius: 16px;
-  filter: grayscale(100%);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  filter: grayscale(50%);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.116);
   transition:
     filter 0.4s ease,
     transform 0.4s ease,
@@ -99,7 +99,7 @@ h2 {
 .sidebar-img:hover {
   filter: grayscale(0%);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 16px 40px rgba(182, 171, 171, 0.18);
 }
 
 
@@ -148,6 +148,6 @@ nav h1 {
 
 
 .nav-li a:hover {
-  background: #000;
-  color: #fff;
+  background: #0400ff;
+  color: #000000;
 }
