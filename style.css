@@ -55,11 +55,11 @@ h2 {
 }
 
 #interests h3 {
-  color: #c703bd;
+  color: #03c7c7;
 }
 
 #interests li {
-  background: #990f0f;
+  background: #000000;
   border-color: #fefeff;
   color: #000000;
 }
@@ -87,7 +87,7 @@ h2 {
 .sidebar-img:hover {
   filter: grayscale(0%);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(182, 171, 171, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
 nav {
@@ -96,7 +96,7 @@ nav {
   align-items: center;
   margin-bottom: 48px;
   padding: 16px 24px;
-  background: #e226e9;
+  background: #e800fd;
   border: 1px solid #00ffff;
   border-radius: 12px;
 }
@@ -131,6 +131,6 @@ nav h1 {
 }
 
 .nav-li a:hover {
-  background: #00e1ff;
+  background: #000000;
   color: #fdfdfd;
 }
