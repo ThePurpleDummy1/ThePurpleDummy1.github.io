@@ -27,11 +27,31 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    toggleGrid();
 
 
     // TODO 2 - Create Platforms
+    createPlatform(300, 700, 20, 10, "black")
+    createPlatform(320, 700, 20, 10, "white")
+    createPlatform(340, 700, 20, 10, "black")
+    createPlatform(360, 700, 20, 10, "white")
+    createPlatform(380, 700, 20, 10, "black")
+    createPlatform(400, 700, 20, 10, "white")
 
+    createPlatform(600, 600, 20, 10, "black")
+    createPlatform(620, 600, 20, 10, "white")
+    createPlatform(640, 600, 20, 10, "black")
+    createPlatform(660, 600, 20, 10, "white")
+    createPlatform(680, 600, 20, 10, "black")
+    createPlatform(700, 600, 20, 10, "white")
+
+    createPlatform(300, 500, 20, 10, "black")
+    createPlatform(320, 500, 20, 10, "white")
+    createPlatform(340, 500, 20, 10, "black")
+    createPlatform(360, 500, 20, 10, "white")
+    createPlatform(380, 500, 20, 10, "black")
+    createPlatform(400, 500, 20, 10, "white")
+    //createPlatform(Xpos, Ypos, Width, Height, "Color", minX, maxX, speedX, minY, maxY, speedY)
 
 
 
