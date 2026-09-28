@@ -18,7 +18,7 @@ $(function () {
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(118, 0, 233)"); // bottom wall
+    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(0, 0, 0)"); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
@@ -31,27 +31,41 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
+    //createPlatform(Xpos, Ypos, Width, Height, "Color", minX, maxX, speedX, minY, maxY, speedY)
+    createPlatform(100, 0, 10, 600, "black")
+    createPlatform(700, 300, 10, 600, "black")
+    createPlatform(800, 0, 10, 600, "black")
+
     createPlatform(300, 700, 20, 10, "black")
     createPlatform(320, 700, 20, 10, "white")
     createPlatform(340, 700, 20, 10, "black")
     createPlatform(360, 700, 20, 10, "white")
     createPlatform(380, 700, 20, 10, "black")
-    createPlatform(400, 700, 20, 10, "white")
 
     createPlatform(600, 600, 20, 10, "black")
     createPlatform(620, 600, 20, 10, "white")
     createPlatform(640, 600, 20, 10, "black")
     createPlatform(660, 600, 20, 10, "white")
     createPlatform(680, 600, 20, 10, "black")
-    createPlatform(700, 600, 20, 10, "white")
 
     createPlatform(300, 500, 20, 10, "black")
     createPlatform(320, 500, 20, 10, "white")
     createPlatform(340, 500, 20, 10, "black")
     createPlatform(360, 500, 20, 10, "white")
     createPlatform(380, 500, 20, 10, "black")
-    createPlatform(400, 500, 20, 10, "white")
-    //createPlatform(Xpos, Ypos, Width, Height, "Color", minX, maxX, speedX, minY, maxY, speedY)
+
+    createPlatform(100, 400, 20, 10, "black")
+    createPlatform(120, 400, 20, 10, "white")
+    createPlatform(140, 400, 20, 10, "black")
+    createPlatform(160, 400, 20, 10, "white")
+    createPlatform(180, 400, 20, 10, "black")
+
+    createPlatform(400, 300, 20, 10, "black", 400, 700, 1, 300, 400, 0)
+    createPlatform(420, 300, 20, 10, "white", 420, 720, 1, 300, 400, 0)
+    createPlatform(440, 300, 20, 10, "black", 440, 740, 1, 300, 400, 0)
+    createPlatform(460, 300, 20, 10, "white", 460, 760, 1, 300, 400, 0)
+    createPlatform(480, 300, 20, 10, "black", 480, 780, 1, 300, 400, 0)
+    
 
 
 
