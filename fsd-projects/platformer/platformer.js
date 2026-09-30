@@ -65,17 +65,42 @@ $(function () {
     createPlatform(440, 300, 20, 10, "black", 440, 740, 1, 300, 400, 0)
     createPlatform(460, 300, 20, 10, "white", 460, 760, 1, 300, 400, 0)
     createPlatform(480, 300, 20, 10, "black", 480, 780, 1, 300, 400, 0)
+
+    createPlatform(1200, 600, 20, 10, "black")
+    createPlatform(1220, 600, 20, 10, "white")
+    createPlatform(1240, 600, 20, 10, "black")
+    createPlatform(1260, 600, 20, 10, "white")
+    createPlatform(1280, 600, 20, 10, "black")
+
+    createPlatform(900, 500, 20, 10, "black")
+    createPlatform(920, 500, 20, 10, "white")
+    createPlatform(940, 500, 20, 10, "black")
+    createPlatform(960, 500, 20, 10, "white")
+    createPlatform(980, 500, 20, 10, "black")
+
+    createPlatform(800, 400, 20, 10, "black")
+    createPlatform(820, 400, 20, 10, "white")
+    createPlatform(840, 400, 20, 10, "black")
+    createPlatform(860, 400, 20, 10, "white")
+    createPlatform(880, 400, 20, 10, "black")
     
 
 
 
     // TODO 3 - Create Collectables
-
-
+    createCollectable("gift", 730, 600)
+    createCollectable("gift", 500, 100)
+    createCollectable("goldengift", 1300, 100)
 
     
     // TODO 4 - Create Cannons
-
+//createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight, minCannonPos, maxCannonPos, cannonSpeed)
+//createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight)
+//createCannon("top bottom left right", position, timeBetweenShots)
+createCannon("top", 825, 3000)
+createCannon("right", 600, 3000)
+createCannon("right", 500, 5000)
+createCannon("right", 400, 3000)
 
     
     

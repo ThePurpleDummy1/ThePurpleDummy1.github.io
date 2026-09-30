@@ -102,4 +102,6 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
+  gift: { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFTbK55LZ6hFLv6QBQf1H4lZg6qlFcRSupx_RGPu7PMA&s=10" },
+  goldengift: { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_ujDbHwdlRSLfYFesPmuGkw8JdKjwx1YOzERIR1ibw&s=10" },
 };
